@@ -1,11 +1,11 @@
-package Functional.functionallogin;
+package Functional. functionallogin;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement; // FIXED: Correct import
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager; // FIXED: Typo in class name
-import org.testng.Assert;
+import io.github.bonigarcia.wdm.WebDriverManager; 
+import org. testng.Assert;
 import org.testng.annotations.*;
 
 public class LoginTest {
@@ -13,7 +13,7 @@ public class LoginTest {
 
     @BeforeMethod
     public void setup() {
-        WebDriverManager.chromedriver().setup(); // No need to manually set path
+        WebDriverManager.chromedriver().setup(); 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
